@@ -1,5 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-image: url('../img/background.png');
+    background-size: cover;
 }
 .color-style{
     color: #D72C31;
@@ -75,5 +77,4 @@ body{
 }
 .sub-title{
     color: #999999;
-
 }
