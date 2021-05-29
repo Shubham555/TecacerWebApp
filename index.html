@@ -1,46 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>Dashboard</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <script src="assets/vendor/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/teachermain.css">
+  <link rel="stylesheet" href="assets/css/teachermobile.css">
 </head>
-<body>
+<body class="main">
+    <div id="mySidebar" class="sidebar d-md-block d-none" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#6A6A6A"/></svg></span> Option 1</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#6A6A6A"/></svg></span> Option 2</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#6A6A6A"/></svg></span> Option 3</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#6A6A6A"/></svg></span> Option 4</a></span></a><br>
+    </div>
+    <div id="content-main" class="container-my my-5">
+        <div class="col">
+            <h1>Welcome, Haneesh</h1>
+            <p>View your course content, create classrooms, review assignments and do much more.</p>
+        </div>
+        <div class="row mx-auto">
+            <div class="col-md-8 col-12  d-md-block d-none">
+                <div class="tabs mt-5">
+                    <div class="tab">
+                        <img src="assets/img/home.svg" alt="">
+                        <h4>Home</h4>
+                    </div>
+                    <div class="tab">
+                        <img src="assets/img/content.svg" alt="">
+                        <h4>Content</h4>
+                    </div>
+                    <div class="tab">
+                        <img src="assets/img/scan.svg" alt="">
+                        <h4>Scan anything</h4>
+                    </div>
+                    <div class="tab">
+                        <img src="assets/img/online.svg" alt="">
+                        <h4>Online Classes</h4>
+                    </div>
+                    <div class="tab">
+                        <img src="assets/img/quiz.svg" alt="">
+                        <h4>Quizzes</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="row mx-auto mt-5">
+                    <div class="col-6"><button type="button" class="d-inline-block btn btn-primary btn-block filled-button">+ Classroom</button></div>
+                    <div class="col-6"><button type="button" class="d-inline-block btn btn-primary btn-block rim-button color-style">+ Online Class</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto">
+            <div class="col-md-8 col-12 mobile-nogutter">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <div class="d-inline-block"><h2>Online Classes</h2></div>
+                        <div class="float-right"><a href="#">See all</a></div>
+                    </div>
+                    <div class="card-body">
+                        <div id="date-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- The slideshow -->
+                            <div class="container carousel-inner no-padding">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-2 date-style">
+                                            <a href="#">
+                                                <h5>Mon</h5>
+                                                <h3>21</h3>
+                                            </a>
+                                        </div>   
+                                        <div class="col-2 date-style active">
+                                            <h5>Tue</h5>
+                                            <h3>21</h3>
+                                        </div>    
+                                        <div class="col-2 date-style">
+                                            <h5>Wed</h5>
+                                            <h3>21</h3>
+                                        </div>    
+                                        <div class="col-2 date-style">
+                                            <h5>Thu</h5>
+                                            <h3>21</h3>
+                                        </div>    
+                                        <div class="col-2 date-style">
+                                            <h5>Fri</h5>
+                                            <h3>21</h3>
+                                        </div>    
+                                        <div class="col-2 date-style">
+                                            <h5>Sat</h5>
+                                            <h3>21</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-2 date-style">
+                                        <h5>Mon</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Tue</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Wed</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Thu</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Fri</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Sat</h5>
+                                        <h3>21</h3>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-2 date-style">
+                                        <h5>Mon</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Tue</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Wed</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Thu</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Fri</h5>
+                                        <h3>21</h3>
+                                    </div>    
+                                    <div class="col-2 date-style">
+                                        <h5>Sat</h5>
+                                        <h3>21</h3>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#date-carousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#date-carousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
 
- <div class="container-fluid">
-     <div class="row height-100">
-         <div class="col-6 text-center ">
-             <img class="verticle-center " src="assets/img/logo.png" width="200">
+                        <div class="dated-div">
+                            <div class="row mx-auto">
+                                <div class="w-10 d-flex align-items-center">
+                                    <h5>10:00:00 AM</h5>
+                                </div>
+                                <div class="w-90">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6 col-12 align-self-center">
+                                                    <h4>Quiz Name</h4>
+                                                    <h5 class="mb-0">7th Grade >> Classroom name</h5>
+                                                </div>
+                                                <div class="col-md-6 col-12">
+                                                    <div class="toright">
+                                                        <button type="button" class="w-auto d-inline-block btn btn-primary btn-block rim-button color-style">Details</button>
+                                                        <a href="#" class="attach">
+                                                            <img class="img-fluid" src="assets/img/attach.svg" alt="">                                                              
+                                                        </a>
+                                                        <div class="dropdown open-hover d-inline-block">
+                                                            <a href="#" class="more nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <img class="img-fluid" src="assets/img/more.svg" alt="">                                                               
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <a class="dropdown-item" href="#">Edit</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 mobile-nogutter">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <div class="d-inline-block">
+                            <h2>Content</h2>
+                            <h4>Bookmarks</h4>
+                        </div>
+                        <div class="float-right"><a href="#">See all</a></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="w-100 h-100">
+                                    Video tile
+                                </div>
+                            </div>
+                            <div class="col-9 text-left">
+                                <h4>Introduction to Usage of Numbers</h4>
+                                <h5 class="d-inline-block">6th Grade</h5>
+                                <h5 class="d-inline-block">Mathematics</h5>
+                                <br>
+                                <img src="assets/img/simulation.svg" class="d-inline-block" alt=""> <a href="#" class="d-inline-block">Simulation</a>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="w-100 h-100">
+                                    Video tile
+                                </div>
+                            </div>
+                            <div class="col-9 text-left">
+                                <h4>Introduction to Usage of Numbers</h4>
+                                <h5 class="d-inline-block">6th Grade</h5>
+                                <h5 class="d-inline-block">Mathematics</h5>
+                                <br>
+                                <img src="assets/img/video.svg" class="d-inline-block" alt=""> <a href="#" class="d-inline-block">Simulation</a>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-12 mobile-nogutter">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <div class="d-inline-block"><h2>Quizes</h2></div>
+                        <div class="float-right"><a href="#">See all</a></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <h3>Quiz Name</h3>
+                                        <div class="row">
+                                            <div class="col-5 align-self-center">
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 align-self-center">
+                                                <h4 class="mb-0">0%</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="toright">
+                                            <div class="avatars d-inline-block">
+                                                <span class="avatar">
+                                                    <img  src="https://picsum.photos/70">
+                                                </span>
+                                                <span class="avatar">
+                                                    <img src="https://picsum.photos/80">
+                                                </span>
+                                                <span class="avatar last">
+                                                    +10
+                                                </span>
+                                            </div>
+                                            <button type="button" class="w-auto d-inline-block btn btn-primary btn-block filled-button">+ Assign</button><button type="button" class="w-auto d-inline-block btn btn-primary btn-block rim-button color-style">Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mx-auto">
+                                    <div class="col-md-3 col-6">
+                                        <h4>Subject</h4>
+                                        <h5>Chemistry</h5>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <h4>No of Questions</h4>
+                                        <h5>25</h5>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <h4>Start Date</h4>
+                                        <h5>25 May 2021</h5>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <h4>EndDate</h4>
+                                        <h5>8 June 2021</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 mobile-nogutter">
+                <img src="assets/img/banner.png" class="mt-4 img-fluid" alt="">
+            </div>
+        </div>
+    </div>
 
-         </div>
-         <div class="col-6 text-center">
-             <div class="card verticle-center p-5">
-                 <h4>Teacher Login</h4>
-                 <br><br>
-                <div class="input-group">
-                    <span class="codes ml-2"> 
-                        <select class="form-control style-input country_code border-control-none" name="country_code" id="country_code" style="padding:0px;">
-                        <option value="1">+1</option><option value="1">+1</option><option value="1-242">+1-242</option><option value="20">+20</option><option value="212">+212</option><option value="230">+230</option><option value="233">+233</option><option value="254">+254</option><option value="260">+260</option><option value="27">+27</option><option value="32">+32</option><option value="33">+33</option><option value="34">+34</option><option value="351">+351</option><option value="354">+354</option><option value="358">+358</option><option value="36">+36</option><option value="377">+377</option><option value="39">+39</option><option value="41">+41</option><option value="43">+43</option><option value="44">+44</option><option value="45">+45</option><option value="46">+46</option><option value="47">+47</option><option value="48">+48</option><option value="49">+49</option><option value="52">+52</option><option value="54">+54</option><option value="55">+55</option><option value="56">+56</option><option value="60">+60</option><option value="61">+61</option><option value="62">+62</option><option value="63">+63</option><option value="64">+64</option><option value="65">+65</option><option value="66">+66</option><option value="7">+7</option><option value="7">+7</option><option value="81">+81</option><option value="84">+84</option><option value="855">+855</option><option value="880">+880</option><option value="90">+90</option><option value="91">+91</option><option value="92">+92</option><option value="94">+94</option><option value="95">+95</option><option value="960">+960</option><option value="965">+965</option><option value="966">+966</option><option value="968">+968</option><option value="971">+971</option><option value="972">+972</option><option value="973">+973</option><option value="974">+974</option><option value="975">+975</option><option value="977">+977</option></select>
-                        </span> <input id="phone_number" type="text" class="form-control border-control" name="phone_number" placeholder="Enter Phone Number">
-                        <input type="hidden" name="mobileview" id="mobileview" value="1"> 
-                </div><br>
-                <button type="button" class="btn btn-primary btn-block filled-button">Request OTP</button><br>
-                <button type="button" class="btn btn-primary btn-block rim-button color-style">Login with Password</button>
-                <br><br><br>
-                New User ? <a href="" class="color-style">Create an Account</a>
-
-             </div>
-         </div>
-     </div>
- </div>
-
+    <nav class="d-md-none d-block navbar navbar-expand fixed-bottom navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto nav-fill w-100">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <div class="text-center">
+                    <img src="assets/img/home.svg" alt="">
+                    <h4 class="mt-1 mb-0">Home</h4>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="text-center">
+                    <img src="assets/img/content.svg" alt="">
+                    <h4 class="mt-1 mb-0">Content</h4>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="text-center">
+                    <img src="assets/img/scan.svg" alt="">
+                    <h4 class="mt-1 mb-0">Scan</h4>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="text-center">
+                    <img src="assets/img/online.svg" alt="">
+                    <h4 class="mt-1 mb-0">Classes</h4>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <div class="text-center">
+                    <img src="assets/img/quiz.svg" alt="">
+                    <h4 class="mt-1 mb-0">Quizzes</h4>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+ <script type="text/javascript" src="assets/js/teachermain.js"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    .mobile-cover {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container-my {
+        width: 100%;
+    }
+
+    .mobile-nogutter {
+        padding: 0;
+    }
+
+    .w-10 {
+        width: 100%;
+    }
+
+    .w-90 {
+        width: 100%;
+    }
+
+    .toright {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    #content-main {
+        margin-left: 0;
+    }
+}
