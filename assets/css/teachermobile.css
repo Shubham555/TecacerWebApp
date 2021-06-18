@@ -36,4 +36,25 @@
     #content-main {
         margin-left: 0;
     }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        display: none;
+    }
+
+    #subject-wrapper {
+        position: fixed;
+        overflow-y: auto;
+        z-index: 1031;
+        max-height: calc(100vh - 6rem);
+        top: 5.6rem;
+        background: white;
+        margin-right: -50%;
+        right: 0;
+        width: 50%;
+    }
+
+    #subject-wrapper.active {
+        right: 50%;
+        width: 100%;
+    }
 }

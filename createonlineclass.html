@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui.css">
+    <link rel="stylesheet" href="assets/vendor/jquery.timepicker.min.css">
+    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-ui.js"></script>
+    <script src="assets/vendor/jquery.timepicker.min.js"></script>
+    <script src="assets/js/touchSwipe.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/teachermain.css">
+    <link rel="stylesheet" href="assets/css/teachermobile.css">
+</head>
+
+<body class="">
+    <div id="mySidebar" class="sidebar d-md-block d-none" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 1</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 2</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 3</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 4</a></span></a><br>
+    </div>
+    <div id="content-main" class="container-my">
+        <!-- HEADER -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto d-md-none d-none">
+                    <li class="nav-item mr-5 active">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/home.svg" alt="">
+                                <h4 class="mt-1 mb-0">Home</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/content.svg" alt="">
+                                <h4 class="mt-1 mb-0">Content</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/scan.svg" alt="">
+                                <h4 class="mt-1 mb-0">Scan</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/online.svg" alt="">
+                                <h4 class="mt-1 mb-0">Classes</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/quiz.svg" alt="">
+                                <h4 class="mt-1 mb-0">Quizzes</h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 ml-auto my-lg-0">
+                    <div class="search_form">
+                        <div class="form-group has-search">
+                            <span class="form-control-feedback"><img src="assets/img/searchicon.png" /></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/img/bell_icon.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="my-5">
+            <div class="row mx-auto">
+                <div class="col-md-8 col-12">
+                    <h1>Create Online Classroom</h1>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div id="accordiontab">
+                        <!-- Step 1 tab button -->
+                        <div class="row mx-auto show collapse part1" data-parent="#accordiontab">
+                            <div class="col-6">
+                                <button type="button"
+                                    class="d-inline-block btn btn-primary btn-block rim-button">Cancel
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button data-toggle="collapse" data-target=".part2" aria-expanded="false" aria-controls="part2" type="button" class="d-inline-block btn btn-primary btn-block filled-button color-style">Continue</button>
+                            </div>                           
+                        </div>
+
+                        <!-- Step 2 tab button -->
+                        <div class="row mx-auto collapse part2" data-parent="#accordiontab">
+                            <div class="col-4">
+                                <button type="button"
+                                    class="d-inline-block btn btn-primary btn-block rim-button">Cancel
+                                </button>
+                            </div>
+                            <div class="col-4">
+                                <button data-toggle="collapse" data-target=".part1" aria-expanded="false" aria-controls="part1" type="button" class="d-inline-block btn btn-primary btn-block filled-button color-style">Back</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button"
+                                    class="d-inline-block btn btn-primary btn-block filled-button color-style">Done
+                                </button>
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="accordion" class="mx-auto w-100">
+                <!-- Step 1 -->
+                <div class="row mx-auto collapse part1 show" data-parent="#accordion">
+                    <div class="col-sm-7">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" id="nonrecurring" name="recurring" type="radio" checked> 
+                                                    <label class="custom-control-label" for="nonrecurring">
+                                                        Non Recurring One time online Class
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="custom-control custom-radio">
+                                                    <input class="custom-control-input" id="recurring" name="recurring" type="radio"> 
+                                                    <label class="custom-control-label" for="recurring">
+                                                        Recurring One time online Class
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <input type="text" id="date" class="form-control border-control" placeholder="Select Date">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" id="starttime" class="form-control border-control" placeholder="Start Time">
+                            </div>
+                            <div class="col-3">
+                                <input type="text" id="endtime" class="form-control border-control" placeholder="End Time">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <p class="text-right">Duration - Calculate the duration and show here</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3 collapse show provide">
+                            <div class="col-12 align-items-center d-flex justify-content-between provider">
+                                <h3 class="d-inline-block mb-0">Online class provider not available</h3>
+                                <button data-toggle="collapse" data-target=".provide" aria-expanded="false" aria-controls="provide" type="button" class="col-3 d-inline-block btn btn-primary btn-block rim-button color-style">+ Add Provider</button>
+                            </div>
+                        </div>
+                        <div class="row mt-3 collapse provide">
+                            <select class="form-control border-control">
+                                <option>Google Meet </option>
+                                <option>Zoom</option>
+                            </select>
+                        </div>
+                        <div class="row mt-3">
+                            <p>Recoring class</p>
+                            <div class="col-sm-12 d-flex">
+                                <div class="custom-control custom-radio mr-4">
+                                    <input class="custom-control-input" id="yes" name="recording" type="radio" checked> 
+                                    <label class="custom-control-label" for="yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="no" name="recording" type="radio"> 
+                                    <label class="custom-control-label" for="no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-12 align-self-center">
+                        <img src="assets/img/side_arrow.png" class="side_arrow" />
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="block_side_box">
+                            <img src="assets/img/bulb.png" class="mb-3" />
+                            <p class="continue_text_ptext">Set up a recurring online classes for an entire semeter or a year</p> 
+                            <p class="continue_text_ptext">Or</p> 
+                            <p class="continue_text_ptext">Set up a one-time special class or a meeting for teachers.</p>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="row mx-auto collapse part2" data-parent="#accordion">
+                    <div class="col-sm-7">
+                        <div class="row mt-5">
+                            <select class="form-control border-control">
+                                <option selected disabled>Assign a classroom</option>
+                                <option>Class room 1</option>
+                                <option>Class room 2</option>
+                            </select>
+                        </div>
+                        <div class="row mt-5">
+                            <select class="form-control border-control">
+                                <option selected disabled>Select a subject for the classroom</option>
+                                <option>Class room 1</option>
+                                <option>Class room 2</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img src="assets/img/or_line.png" /> &nbsp; &nbsp; OR &nbsp; &nbsp; <img
+                                    src="assets/img/or_line.png" />
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12 share_link js-copy-container">
+                                <h3 class="mb-0 d-inline-block">Share the link: <span class="text-muted js-copy-target">http://teacherapp.practically.com</span></h3>
+                                <button type="button" data-clipboard-text="http://teacherapp.practically.com"
+                                    class="js-copy-trigger col-md-2 col-4 float-right d-inline-block btn btn-primary btn-block rim-button color-style">Copy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-12 align-self-center">
+                        <img src="assets/img/side_arrow.png" class="side_arrow" />
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="block_side_box">
+                            <img src="assets/img/bulb.png" class="mb-3" />
+                            <p class="continue_text_ptext">Assign the classes set to a classroom. Your students registered for the classroom will get all the online classes along with notifications for the classes.</p> 
+                            <p class="continue_text_ptext">Or</p> 
+                            <p class="continue_text_ptext">Share a link with your students to join.</p>
+                        </div>
+    
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <nav class="d-md-none d-block navbar navbar-expand fixed-bottom navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/home.svg" alt="">
+                            <h4 class="mt-1 mb-0">Home</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/content.svg" alt="">
+                            <h4 class="mt-1 mb-0">Content</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/scan.svg" alt="">
+                            <h4 class="mt-1 mb-0">Scan</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/online.svg" alt="">
+                            <h4 class="mt-1 mb-0">Classes</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/quiz.svg" alt="">
+                            <h4 class="mt-1 mb-0">Quizzes</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script type="text/javascript" src="assets/vendor/clipboard.min.js"></script>
+    <script type="text/javascript" src="assets/js/teachermain.js"></script>
+</body>
+
+</html>

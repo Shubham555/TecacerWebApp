@@ -1,0 +1,557 @@
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBoldItalic;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-SemiBoldItalic.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Italic;
+    src: url('../../styles/teacherapp_v1/fonts/Poppins-Italic.ttf');
+}
+html, body, .auth, .main {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+body{
+    font-family: Poppins-Regular, sans-serif;
+}
+
+.auth {
+    background-image: url('../../styles/teacherapp_v1/img/background.png');
+    background-size: cover;
+}
+
+.main {
+    background: #F3F2E8;
+    background-size: cover;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.sidebar {
+    height: 100%;
+    width: 42px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: #292929;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    white-space: nowrap;
+}
+
+.sidebar a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.container-my {
+    width: 90%;
+    margin: auto;
+}
+
+.bg-danger {
+    /* borders-gray */
+    background: #D72C31;
+}
+
+.progress {
+    height: 5px;
+}
+
+
+
+/* DIFFERENT TYPES OF FONTS */
+
+h1 {
+    font-family: Poppins-Bold;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+    color: #000000;
+}
+
+h2 {
+    font-family: Poppins-Regular;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+h3 {
+    font-family: Poppins-Regular;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    /* main tect */
+    color: #292929;
+}
+
+h4 {
+    font-family: Poppins-Regular;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 10px;
+    /* identical to box height, or 83% */
+    color: #000000;
+}
+
+.auth h4 {
+    font-family: Poppins-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+h5 {
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    /* gray3 */
+    color: #999999;
+}
+
+h6, a, .custom-control-label {
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    /* gray2 */
+    color: #515151;
+}
+
+p {
+    font-family: Poppins-Regular;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #999999;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: 0px 1px 0px #D72C31;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url(../../styles/teacherapp_v1/img/tick.svg);
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #88D25A;
+    background-color: #fff;
+    border: 2px solid #88D25A;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: 0px 1px 0px #d7d7d7;
+    padding: .375rem 0px;
+}
+
+.color-style{
+    color: #D72C31;
+}
+
+.height-100{
+    height: 100vh;
+}
+
+.filled-button{
+  background-color: #D72C31 ;
+  border: 2px solid #D72C31;
+  border-radius: 20px;
+  color: white;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.filled-button:hover {
+    background-color: #FDD700;
+    color: black;
+    border-color: #FDD700;
+}
+
+.rim-button{
+   border: 2px solid #D72C31;
+   color: #D72C31;
+   border-radius: 20px;
+   background-color: transparent;
+   margin: 0;
+   margin-right: 1rem;
+}
+
+.rim-button:hover {
+    background-color: #D72C31;
+    color: white;
+    border-color: #D72C31;
+}
+
+.btn-block+.btn-block {
+    margin: 0;
+}
+
+.border-control{
+    border: 0px solid;
+    min-width: 290px;
+}
+
+.otpfield {
+    width: 40px; margin-right: 5px;
+    text-align: center;
+}
+
+.otpfield.border-control {
+    min-width: 0;
+}
+
+#partitioned {
+    padding-left: 15px;
+    letter-spacing: 42px;
+    border: 0;
+    background-image: linear-gradient(to left, black 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 36px 1px;
+    background-repeat: repeat-x;
+    background-position-x: 35px;
+    width: 220px;
+  }
+
+  .w-70{
+      width: 70%;
+  }
+  .w-100{
+      width: 100%;
+  }
+  .checkboxes{
+     
+    padding: 10px;
+    float: left;
+    margin: 10px;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #999999;
+    font-size: 11px;
+}
+.checkboxes-rad{
+    color: #999999;
+    padding: 11px;
+    float: left;
+    margin: 10px;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 10px;
+}
+.sub-title{
+    color: #999999;
+}
+
+
+/* Floating Label */
+label {
+    position:relative;
+    display:inline-block;
+}
+
+span.floating-label {
+    padding: 10px 0;
+    pointer-events: none;
+    position:absolute;
+    left:0;
+    top:0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+    font-size: 0.8em;
+}
+
+input:focus + span.floating-label, input:not(:placeholder-shown) + span.floating-label {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-10px);
+}
+
+/* For IE Browsers*/
+input:focus + span.floating-label, input:not(:-ms-input-placeholder) + span.floating-label {
+    opacity:1;
+    transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+
+/* SELECT SUBJECT TABS */
+.subject-group {
+    max-width: 400px;
+}
+.divselect {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    margin-right: 20px;
+}
+.divselect input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.divselect .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    /* borders-gray */
+
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.divselect .alphabet {
+    color: #A8A8A8;
+    font-weight: 500;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+/* When the checkbox is checked, add a blue background */
+.divselect input:hover ~ .checkmark, .divselect input:checked ~ .checkmark {
+    background: #F0F9FF;
+    border: 1px solid #2E9CEC;
+}
+
+.divselect input:hover ~ .alphabet, .divselect input:checked ~ .alphabet {
+    color: #2E9CEC;
+    font-weight: 500;
+    z-index: 1;
+}
+
+
+
+
+
+/* Dashboard css */
+.tabs .tab {
+    width: 19%;  
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.tabs .tab img {
+    margin-bottom: 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.main .card {
+    height: 100%;
+}
+
+.card-header {
+    background: none;
+    border: 0;
+}
+
+/* Image Collection */
+.avatars {
+    margin-right: calc(1em + 10px);
+}
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+}
+
+.avatar {
+    margin-right: -10px;
+    -webkit-mask: radial-gradient(circle 0px at 5px 50%,transparent 99%,#fff 100%);
+    mask: radial-gradient(circle 0px at 5px 50%,transparent 99%,#fff 100%);
+}
+
+.avatar.last {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 30px;
+    /* white */
+    background: #FFFFFF;
+    /* borders-gray */
+    border: 1px solid #DEDEDE;
+}
+
+.avatar img {
+    width: 100%;
+    display: block;
+}
+
+.toright {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    place-items: center;
+}
+
+.date-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+}
+
+.date-style a {
+    text-decoration: none;
+}
+
+.date-style h3 {
+    padding: 5px 9px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.date-style:hover h3, .date-style.active h3 {
+    background: #292929;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: #000;
+    opacity: 1;
+    width: fit-content;
+}
+
+.carousel-control-prev {
+    background: linear-gradient(90deg, #FFFFFF 25%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-control-next {
+    background: linear-gradient(90deg, #FFFFFF 17.19%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: url(../../styles/teacherapp_v1/img/arrow-left.svg);
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-control-next-icon {
+    transform: rotate(180deg);
+}
+
+.w-10 {
+    display: inline-block;
+    width: 10%;
+}
+
+.w-90 {
+    display: inline-block;
+    width: 90%;
+}
+
+.attach {
+    margin-right: 1em;
+}
+
+.attach img {
+    height: 20px;
+}
+
+.more {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.more:hover {
+    background: #F2F2F2;
+}
+
+.more img {
+    height: 15px;
+}
+
+.dropdown.open-hover:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown.open-hover .dropdown-menu {
+    margin: -0.5rem 0 0;
+}

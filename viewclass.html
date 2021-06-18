@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui.css">
+    <link rel="stylesheet" href="assets/vendor/jquery.timepicker.min.css">
+    <script src="assets/vendor/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery-ui.js"></script>
+    <script src="assets/vendor/jquery.timepicker.min.js"></script>
+    <script src="assets/js/touchSwipe.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/teachermain.css">
+    <link rel="stylesheet" href="assets/css/teachermobile.css">
+</head>
+
+<body class="">
+    <div id="mySidebar" class="sidebar d-md-block d-none" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 1</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 2</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 3</a></span></a><br>
+        <a href="#"><span class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#6A6A6A" />
+                </svg></span> Option 4</a></span></a><br>
+    </div>
+    <div id="content-main" class="container-my">
+        <!-- HEADER -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto d-md-none d-none">
+                    <li class="nav-item mr-5 active">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/home.svg" alt="">
+                                <h4 class="mt-1 mb-0">Home</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/content.svg" alt="">
+                                <h4 class="mt-1 mb-0">Content</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/scan.svg" alt="">
+                                <h4 class="mt-1 mb-0">Scan</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/online.svg" alt="">
+                                <h4 class="mt-1 mb-0">Classes</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="#">
+                            <div class="text-center">
+                                <img src="assets/img/quiz.svg" alt="">
+                                <h4 class="mt-1 mb-0">Quizzes</h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 ml-auto my-lg-0">
+                    <div class="search_form">
+                        <div class="form-group has-search">
+                            <span class="form-control-feedback"><img src="assets/img/searchicon.png" /></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="assets/img/bell_icon.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="my-2">
+            <div class="row mx-auto">
+                <div class="tab col-12" id="tab">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" id="session" href="#session">Online
+                                Sessions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" id="classroom" href="#classroom">Classroom</a>
+                        </li>
+                        <li class="slider">
+                            <div class="bar"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col-md-3 col-12 pt-3 border-right-grey">
+                    <a href="#" class="w-100 subjectbox subject-toggle active">
+                        <div class="p-3">
+                            <h3>Classroom name</h3>
+                            <h4>Mathematics</h4>
+                            <h5>9th Grade</h5>
+                        </div>
+                    </a>
+                    <a href="#" class="w-100 subjectbox subject-toggle">
+                        <div class="p-3">
+                            <h3>Classroom name</h3>
+                            <h4>Mathematics</h4>
+                            <h5>9th Grade</h5>
+                        </div>
+                    </a>
+                    <a href="#" class="w-100 subjectbox subject-toggle">
+                        <div class="p-3">
+                            <h3>Classroom name</h3>
+                            <h4>Mathematics</h4>
+                            <h5>9th Grade</h5>
+                        </div>
+                    </a>
+                    <a href="#" class="w-100 subjectbox subject-toggle">
+                        <div class="p-3">
+                            <h3>Classroom name</h3>
+                            <h4>Mathematics</h4>
+                            <h5>9th Grade</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-9 col-12 pt-3">
+                    <div id="subject-wrapper" class="active">
+                        <div class="d-flex align-items-center row mx-auto justify-content-between mb-3">
+                            <div class="col-md-6 col-12 mt-2">
+                                <h2>Classroom Name <a href="#" class="filled-button p-2 ml-2 menu-toggle three-dots"><img src="assets/img/pencil.svg"
+                                    alt=""></a></h2>
+                            </div>
+                            <div class="col-md-6 col-12 mt-2">
+                                <div class="row mx-auto">
+                                    <div class="col-6 pl-0">
+                                        <button type="button"
+                                            class="d-inline-block btn btn-primary btn-block rim-button subject-toggle">Cancel
+                                        </button>
+                                    </div>
+                                    <div class="col-6 pr-0">
+                                        <button class="d-inline-block btn btn-primary btn-block filled-button color-style">Delete</button>
+                                    </div>                           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-auto w-100">
+                            <div class="col-md-4 col-6 mb-4">
+                                <h5>Subject</h5>
+                                <h3>Mathematics</h3>
+                            </div>
+                            <div class="col-md-4 col-6 mb-4">
+                                <h5>Grade</h5>
+                                <h3>7th Grade</h3>
+                            </div>
+                            <div class="col-md-4 col-6 mb-4">
+                                <h5>Status</h5>
+                                <h3>Active</h3>
+                            </div>
+                            <div class="col-md-4 col-6 mb-4">
+                                <h5>Enrollment Type</h5>
+                                <h3>Active</h3>
+                            </div>
+                            <div class="col-md-4 col-6 mb-4">
+                                <h5>Class Type</h5>
+                                <h3>Regular</h3>
+                            </div>
+                            <div class="col-md-4 col-6 mb-4">
+                                <h5>Number of Students</h5>
+                                <h3>40</h3>
+                            </div>
+    
+                        </div>
+                        <div class="row mx-auto w-100">
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="statsBox">
+                                    <p class="thinbig">32</p>
+                                    <h5>Student Registered</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="statsBox">
+                                    <p class="thinbig">15</p>
+                                    <h5>Students Accepted</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mb-4">
+                                <div class="statsBox">
+                                    <p class="thinbig">76%</p>
+                                    <h5>Attendance</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="col">Please share below link with students to invite them to this classroom</h4>
+                        <div class="row mx-auto mb-5">
+                            <div class="col-12 share_link js-copy-container">
+                                <h3 class="mb-0 d-inline-block">Share the link: <span
+                                        class="text-muted js-copy-target">http://teacherapp.practically.com</span></h3>
+                                <button type="button" data-clipboard-text="http://teacherapp.practically.com"
+                                    class="js-copy-trigger col-md-2 col-4 float-right d-inline-block btn btn-primary btn-block rim-button color-style">Copy
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mx-auto">
+                            <div class="tab col-12" id="tab">
+                                <ul class="nav nav-tabs" id="nav-tab">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" id="nav-students-tab" href="#nav-students">Students</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" id="nav-online-tab" href="#nav-online">Online Sessions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" id="nav-assignment-tab" href="#nav-assignment">Assignments</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" id="nav-materials-tab" href="#nav-materials">Materials</a>
+                                    </li>
+                                    <li class="slider">
+                                        <div class="bar"></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content w-100" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-students" role="tabpanel" aria-labelledby="nav-students-tab">
+                                    <div class="card my-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-9 col-12 align-self-center">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img  src="https://picsum.photos/70" class="float-left mr-3" style="height: 32px; border-radius: 50%;">
+                                                            <h4>Prathamesh chatorikar</h4>
+                                                            <h5 class="mb-0">7th Grade</h5>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <h5 class="mb-0">Attendance</h5>
+                                                            <h4>50%</h4>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5 class="mb-0">Assignments</h5>
+                                                            <h4>submitted</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-12">
+                                                    <div class="toright">
+                                                        <button type="button" class="w-auto d-inline-block btn btn-primary btn-block rim-button color-style">Approve</button>
+                                                        <a href="#" class="bin">
+                                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.888889 14.2222C0.888889 15.2 1.68889 16 2.66667 16H9.77778C10.7556 16 11.5556 15.2 11.5556 14.2222V3.55556H0.888889V14.2222ZM2.66667 5.33333H9.77778V14.2222H2.66667V5.33333ZM9.33333 0.888889L8.44444 0H4L3.11111 0.888889H0V2.66667H12.4444V0.888889H9.33333Z" fill="#D72C31"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03704 12.7407V6.81482H6.81482V12.7407H5.03704Z" fill="#D72C31"/>
+                                                            </svg>                                                                                                                           
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card my-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-9 col-12 align-self-center">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img  src="https://picsum.photos/70" class="float-left mr-3" style="height: 32px; border-radius: 50%;">
+                                                            <h4>Prathamesh chatorikar</h4>
+                                                            <h5 class="mb-0">7th Grade</h5>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <h5 class="mb-0">Attendance</h5>
+                                                            <h4>50%</h4>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5 class="mb-0">Assignments</h5>
+                                                            <h4>submitted</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-12">
+                                                    <div class="toright">
+                                                        <button type="button" class="w-auto d-inline-block btn btn-primary btn-block rim-button color-style">Approve</button>
+                                                        <a href="#" class="bin">
+                                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.888889 14.2222C0.888889 15.2 1.68889 16 2.66667 16H9.77778C10.7556 16 11.5556 15.2 11.5556 14.2222V3.55556H0.888889V14.2222ZM2.66667 5.33333H9.77778V14.2222H2.66667V5.33333ZM9.33333 0.888889L8.44444 0H4L3.11111 0.888889H0V2.66667H12.4444V0.888889H9.33333Z" fill="#D72C31"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03704 12.7407V6.81482H6.81482V12.7407H5.03704Z" fill="#D72C31"/>
+                                                            </svg>                                                                                                                           
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card my-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-9 col-12 align-self-center">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img  src="https://picsum.photos/70" class="float-left mr-3" style="height: 32px; border-radius: 50%;">
+                                                            <h4>Prathamesh chatorikar</h4>
+                                                            <h5 class="mb-0">7th Grade</h5>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <h5 class="mb-0">Attendance</h5>
+                                                            <h4>50%</h4>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5 class="mb-0">Assignments</h5>
+                                                            <h4>submitted</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-12">
+                                                    <div class="toright">
+                                                        <button type="button" class="w-auto d-inline-block btn btn-primary btn-block rim-button color-style">Approve</button>
+                                                        <a href="#" class="bin">
+                                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.888889 14.2222C0.888889 15.2 1.68889 16 2.66667 16H9.77778C10.7556 16 11.5556 15.2 11.5556 14.2222V3.55556H0.888889V14.2222ZM2.66667 5.33333H9.77778V14.2222H2.66667V5.33333ZM9.33333 0.888889L8.44444 0H4L3.11111 0.888889H0V2.66667H12.4444V0.888889H9.33333Z" fill="#D72C31"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03704 12.7407V6.81482H6.81482V12.7407H5.03704Z" fill="#D72C31"/>
+                                                            </svg>                                                                                                                           
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card my-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-9 col-12 align-self-center">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img  src="https://picsum.photos/70" class="float-left mr-3" style="height: 32px; border-radius: 50%;">
+                                                            <h4>Prathamesh chatorikar</h4>
+                                                            <h5 class="mb-0">7th Grade</h5>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <h5 class="mb-0">Attendance</h5>
+                                                            <h4>50%</h4>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <h5 class="mb-0">Assignments</h5>
+                                                            <h4>submitted</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-12">
+                                                    <div class="toright">
+                                                        <button type="button" class="w-auto d-inline-block btn btn-primary btn-block rim-button color-style" disabled>Approved</button>
+                                                        <a href="#" class="bin">
+                                                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.888889 14.2222C0.888889 15.2 1.68889 16 2.66667 16H9.77778C10.7556 16 11.5556 15.2 11.5556 14.2222V3.55556H0.888889V14.2222ZM2.66667 5.33333H9.77778V14.2222H2.66667V5.33333ZM9.33333 0.888889L8.44444 0H4L3.11111 0.888889H0V2.66667H12.4444V0.888889H9.33333Z" fill="#D72C31"/>
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.03704 12.7407V6.81482H6.81482V12.7407H5.03704Z" fill="#D72C31"/>
+                                                            </svg>                                                                                                                           
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-online" role="tabpanel" aria-labelledby="nav-online-tab">b</div>
+                                <div class="tab-pane fade" id="nav-assignment" role="tabpanel" aria-labelledby="nav-assignment-tab">c</div>
+                                <div class="tab-pane fade" id="nav-materials" role="tabpanel" aria-labelledby="nav-materials-tab">d</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- SIDEBAR FOR EDIT! -->
+                <div id="sidebar-wrapper" class="">
+                    <div class="editdiv">
+                        <div class="d-flex col-12 align-items-center justify-content-between mb-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Edit Online Session</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-auto">
+                            <div class="col-6">
+                                <div class="row mx-auto">
+                                    <div class="col-sm-12">
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" id="nonrecurring" name="recurring" type="radio" checked> 
+                                            <label class="custom-control-label" for="nonrecurring">
+                                                Non Recurring One time online Class
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row mx-auto">
+                                    <div class="col-sm-12">
+                                        <div class="custom-control custom-radio">
+                                            <input class="custom-control-input" id="recurring" name="recurring" type="radio"> 
+                                            <label class="custom-control-label" for="recurring">
+                                                Recurring One time online Class
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mx-auto mt-5">
+                            <div class="col-12">
+                                <select class="form-control border-control col-12">
+                                    <option selected disabled>Select a subject for the classroom</option>
+                                    <option>Class room 1</option>
+                                    <option>Class room 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mx-auto mt-5">
+                            <div class="col-12">
+                                <select class="form-control border-control col-12">
+                                    <option selected disabled>Grade</option>
+                                    <option>Class room 1</option>
+                                    <option>Class room 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mx-auto mt-5">
+                            <div class="col-12">
+                                <input type="text" id="date" class="form-control border-control" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="row mx-auto mt-5">
+                            <div class="col-12">
+                                <input type="text" id="starttime" class="form-control border-control" placeholder="Start Time">
+                            </div>
+                        </div>
+                        <div class="row mx-auto mt-5 provide">
+                            <div class="col-12">
+                                <select class="form-control border-control">
+                                    <option>Google Meet </option>
+                                    <option>Zoom</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mx-auto mt-5">
+                            <p class="col-12">Recoring class</p>
+                            <div class="col-sm-12 d-flex">
+                                <div class="custom-control custom-radio mr-4">
+                                    <input class="custom-control-input" id="yes" name="recording" type="radio" checked> 
+                                    <label class="custom-control-label" for="yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input class="custom-control-input" id="no" name="recording" type="radio"> 
+                                    <label class="custom-control-label" for="no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5 mx-1">
+                            <div class="col-6">
+                                <button type="button"
+                                    class="d-inline-block btn btn-primary btn-block rim-button menu-toggle">Cancel
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button class="d-inline-block btn btn-primary btn-block filled-button color-style">Save</button>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="d-md-none d-block navbar navbar-expand fixed-bottom navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/home.svg" alt="">
+                            <h4 class="mt-1 mb-0">Home</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/content.svg" alt="">
+                            <h4 class="mt-1 mb-0">Content</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/scan.svg" alt="">
+                            <h4 class="mt-1 mb-0">Scan</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/online.svg" alt="">
+                            <h4 class="mt-1 mb-0">Classes</h4>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <div class="text-center">
+                            <img src="assets/img/quiz.svg" alt="">
+                            <h4 class="mt-1 mb-0">Quizzes</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script type="text/javascript" src="assets/vendor/clipboard.min.js"></script>
+    <script type="text/javascript" src="assets/js/teachermain.js"></script>
+</body>
+
+</html>

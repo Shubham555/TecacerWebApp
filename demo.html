@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pot Diagram</title>
+
+    <style>
+        html, body {
+        }
+        .pot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            border-radius: 0 0 20px 20px;
+        }
+        .pot-smaller {
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            background-color: red;
+        }
+        .pot::before {
+            content: ' ';
+            width: 40px;
+            height: 20px;
+            left: -40px;
+            border-radius: 0 20px 0 0;
+            background-color: white;
+            box-shadow: 20px 0px 0px skyblue;
+            position: absolute;
+        }
+
+        .pot::after {
+            content: ' ';
+            width: 40px;
+            height: 20px;
+            right: -40px;
+            border-radius: 20px 0 0 0;
+            background-color: white;
+            box-shadow: -20px 0px 0px skyblue;
+            position: absolute;
+        }
+
+        .pot-smaller::before {
+            background-color: skyblue;
+            box-shadow: 20px 0px 0px red;
+        }
+
+        .pot-smaller::after {
+            background-color: skyblue;
+            box-shadow: 20px 0px 0px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="pot pot-smaller">
+    </div>
+    <div class="pot">
+    </div>
+</body>
+</html>

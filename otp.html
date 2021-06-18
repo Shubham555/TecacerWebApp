@@ -4,54 +4,56 @@
   <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <script src="assets/vendor/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="assets/css/teachermain.css">
   <link rel="stylesheet" href="assets/css/teachermobile.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body class="auth">
 <div class="container-fluid">
     <div class="row height-100">
-        <div class="col-lg-6 col-md-4 d-md-flex justify-content-center d-none text-center align-self-center p-0 ">
+        <div class="offset-1 col-lg-5 col-md-4 d-md-flex justify-content-center d-none text-center align-self-center p-0 ">
             <img class="" src="assets/img/logo.png" width="200">
 
         </div>
-        <div class="d-flex align-items-center justify-content-center col-lg-6 col-md-8 col-12  p-0 text-center">
+        <div class="d-flex align-items-center justify-content-center col-lg-5 col-md-8 col-12  p-0">
             <div class="card mobile-cover p-5 align-items-center justify-content-center">
-                <div class="w-100 d-flex justify-content-start">
-                    <img src="assets/img/back.png" width="20px">
+                <div class="card-body">
+                    <div class="w-100 d-flex justify-content-start">
+                        <img src="assets/img/back.png" width="20px">
+                    </div>
+                    <br>
+                    <img class="d-md-none d-block mb-5" src="assets/img/practicallywhite.png" alt="">
+                    <h4>Enter OTP</h4>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center" id="otp-container">
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-block filled-button">Verify OTP</button><br>
+                    <button type="button" class="btn btn-primary btn-block rim-button color-style">Resend OTP</button>
+                    <br><br><br>
+                   <h6>New User ? <a href="" class="color-style">Create an Account</a></h6>
                 </div>
-                <h4>Enter OTP</h4>
-                <br><br>
-                <div class="d-flex align-items-center justify-content-center" id="otp-container">
-                    <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
-                           maxlength="1" type="text" placeholder="-">
-            
-                    <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
-                           maxlength="1" type="text" placeholder="-">
-            
-                    <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
-                           maxlength="1" type="text" placeholder="-">
-            
-                    <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
-                           maxlength="1" type="text" placeholder="-">
-            
-                    <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
-                           maxlength="1" type="text" placeholder="-">
-            
-                    <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
-                           maxlength="1" type="text" placeholder="-">
-                </div>
-                <br>
-                <button type="button" class="btn btn-primary btn-block filled-button">Verify OTP</button><br>
-                <button type="button" class="btn btn-primary btn-block rim-button color-style">Resend OTP</button>
-                <br><br><br>
-                New User ? <a href="" class="color-style">Create an Account</a>
 
             </div>
         </div>

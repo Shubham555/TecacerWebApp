@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>Verify</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <script src="assets/vendor/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/teachermain.css">
+  <link rel="stylesheet" href="assets/css/teachermobile.css">
 </head>
 <body class="auth">
+<div class="container-fluid">
+    <div class="row height-100">
+        <div class="offset-1 col-lg-5 col-md-4 d-md-flex justify-content-center d-none text-center align-self-center p-0 ">
+            <img class="" src="assets/img/logo.png" width="200">
 
- <div class="container-fluid">
-     <div class="row height-100">
-         <div class="col-6 text-center ">
-             <img class="verticle-center " src="assets/img/logo.png" width="200">
+        </div>
+        <div class="d-flex align-items-center justify-content-center col-lg-5 col-md-8 col-12  p-0">
+            <div class="card mobile-cover p-5 align-items-center justify-content-center">
+                <div class="card-body">
+                    <div class="w-100 d-flex justify-content-start">
+                        <img src="assets/img/back.png" width="20px">
+                    </div>
+                    <br>
+                    <img class="d-md-none d-block mb-5" src="assets/img/practicallywhite.png" alt="">
+                    <h4>Enter OTP</h4>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center" id="otp-container">
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                
+                        <input class="otpfield border-control form-control" oninput="inputInsideOtpInput(this)"
+                               maxlength="1" type="number" placeholder="-">
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-block filled-button">Verify OTP</button><br>
+                    <button type="button" class="btn btn-primary btn-block rim-button color-style">Resend OTP</button>
+                    <br><br><br>
+                   <h6>New User ? <a href="" class="color-style">Create an Account</a></h6>
+                </div>
 
-         </div>
-         <div class="col-6 text-center">
-             <div class="card verticle-center p-5 w-70">
-                 <img src="assets/img/back.png" width="20px">
-                 <h4>Verify yourself</h4>
-                 <br><br>
-                <div class="input-group">
-                    <input id="partitioned" type="text" maxlength="6" />
-                </div><br>
-                <button type="button" class="btn btn-primary btn-block filled-button">Verify OTP</button><br>
-                <button type="button" class="btn btn-primary btn-block rim-button color-style">Resend OTP</button>
-                <br><br><br>
-               
-             </div>
-         </div>
-     </div>
- </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<script type="text/javascript" src="assets/js/teachermain.js"></script>
 </body>
 </html>
